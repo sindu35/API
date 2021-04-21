@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+
+<script src="project.js"></script>
+
+<style>
+
+   
+    .container
+      {
+        width: 50%;
+       
+       
+      }
+    
+    
+</style>
+    </head>
+    <body>
+        <div class="container"  align="center">
+        <h3 class="text-primary" >Student Details</h3>
+        NAME:   <input type="text" id ="name"><br><br>
+        Rollno: <input type="text" id ="rollno"><br><br>
+       
+
+        <button id="insert"  class="btn btn-info active"onclick="insertData()">Insert</button>
+        <button id="update"  class="btn btn-info active" onclick="updateData()">update</button>
+        <button id="delete"  class="btn btn-info active"onclick="deleteData()">delete</button>
+        <button id="load"  class="btn btn-info active" onclick="readData()">load</button>
+        </div><br><br>
+        <div id="result" align="center"></div>
+    </body>
+</html>
